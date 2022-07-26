@@ -1,0 +1,258 @@
+/* General CSS settings */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+:root{
+    --primary-color: #0052FF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* background-image: url("./img/background.jpg"); */
+}
+
+/* ----------------NAVBAR -------------------------- */
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100vw;
+}
+
+header nav p {
+    align-self: center;
+    font-size: 1.5em;
+}
+
+header nav p span {
+    color: var(--primary-color);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:visited,
+header nav ul li a:active {
+    color: var(--primary-color);
+}
+
+main div:last-child{
+    align-self: center;
+    justify-self: center;
+    margin: auto 0;
+    text-align: center;
+}
+
+main div:last-child p{
+    line-height: 60px;
+}
+
+main div:last-child p .first  {
+    font-size: 2rem;
+}
+
+main div:last-child p .second {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+main div:last-child p .third {
+    font-size: 1.2rem;
+}
+
+main div:last-child button {
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(34, 34, 247);
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* -----------------ABOUT AND DEPARTMENT ------------------- */
+
+section.about {
+    width: 100vw;
+    height: 100vh;
+}
+
+section div#about {
+    display: flex;
+    justify-content: space-around;
+    height: 20%;
+}
+
+section.about div#about .container {
+    width: 25%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+section.about div#about .container h4 {
+    color: var(--primary-color);
+}
+
+section div#department {
+    height: 70%;
+    background-color: rgb(242, 237, 250);
+}
+
+
+section.about div#department div.body {
+    margin: 20px auto;
+    text-align: center;
+    width: 35%;
+    padding: 10px;
+}
+
+section.about div#department div.content {
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'psychiatry laboratory dentistry cardiology'
+    'gynecology medicine emergency pediatrics';
+    gap: 30px;
+    width: 90%;
+    height: 65%;
+    text-align: center;
+}
+
+section.about div#department div.content .psychiatry {
+    grid-area: psychiatry;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section.about div#department div.content .laboratory {
+    grid-area: laboratory;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section.about div#department div.content .dentistry {
+    grid-area: dentistry;
+    background-color: white;
+    border-radius: 10px;
+}
+section.about div#department div.content .cardiology {
+    grid-area: cardiology;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section.about div#department div.content .gynecology {
+    grid-area: gynecology;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section.about div#department div.content .medicine {
+    grid-area: medicine;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section.about div#department div.content .emergency {
+    grid-area: emergency;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section.about div#department div.content .pediatrics {
+    grid-area: pediatrics;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section.about div#department div.content div.card:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+♫
+
+section.about div#department div.content h4{
+    color: var(--primary-color);
+}
+
+
+/* ------------------ SERVICS --------------------- */
+
+section#services {
+    height: 100vh;
+    width: 100vw;
+}
+
+section#services div.title{
+    text-align: center;
+    margin: 20px auto;
+}
+
+section#services div.service-content {
+    margin-right: 7%;
+    margin-left: 7%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+section#services div.service-content .item {
+    width: 25%;
+    line-height: 2rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+section#services div.service-content .item:hover,
+section#services div.service-content .item h3:hover
+{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+section#services div.service-content .item h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+section#services div.service-content .item ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#services div.service-content .item ul li:before {
+    content: '\2713';
+    margin: 0 1em;
+}
